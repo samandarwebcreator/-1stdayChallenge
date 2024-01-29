@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000536;
+  font-family: "Poppins", sans-serif;
+}
+
+.main__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.wrapper {
+  background-color: #ddd;
+  border: 2px solid #000536;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  color: #000536;
+}
+
+span {
+  position: relative;
+  font-size: 22px;
+  bottom: -1px;
+  color: #000536;
+}
+
+.opt-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+button {
+  background-color: #000536;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 150px;
+}
+
+button:hover {
+  color: #000536;
+  background-color: transparent;
+  border: 2px solid #000536;
+}
+
+input[type="range"] {
+  width: 350px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 8px;
+  border: 2px solid #000536;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 8px;
+  border: 2px solid #000536;
+}
+
+.gridCol {
+  height: 10px;
+  width: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.gridRow {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridCol {
+    height: 0.8em;
+    width: 0.8em;
+  }
+}
